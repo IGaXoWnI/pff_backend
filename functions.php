@@ -141,7 +141,7 @@ function checkAuthenticate()
         exit;
     }
 
-    // End 
+    
 
 
 
@@ -153,13 +153,21 @@ function printFailure(){
     echo json_encode(array("status" => "failure"));
 }
 
-
-
-function sendemail($to,$title,$body){
-
-$header = "From: support@gaxown.com " . "\n" . "CC: igaxownworki@gmail.com" ;
-
-mail($to , $title , $body , $header) ;
-echo "success";
-
+function printSuccess(){
+    echo json_encode(array("status" => "success"));
 }
+
+function result($count){
+    if($count>0){
+        printSuccess();
+    }else{
+        printFailure();
+    }
+}
+
+
+
+
+
+
+
