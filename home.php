@@ -9,7 +9,7 @@ $categories = getAllData("categories" , null , null , false );
 $alldata['categories'] = $categories ;
 
 
-$boxs = getAllData("boxs" , null , null , false );
+$boxs = getAllData("boxsview" , null , null , false );
 
 $alldata['boxs'] = $boxs ;
 
