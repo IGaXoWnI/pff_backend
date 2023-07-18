@@ -1,8 +1,5 @@
 <?php
 
-// ==========================================================
-//  Copyright Reserved Wael Wael Abo Hamza (Course Ecommerce)
-// ==========================================================
 
 define("MB", 1048576);
 
@@ -198,10 +195,3 @@ function result($count){
         printFailure();
     }
 }
-
-
-
-
-
-
-
